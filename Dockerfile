@@ -1,6 +1,6 @@
 FROM openjdk:8
 
-ARG server_zip=https://github.com/JanusGraph/janusgraph/releases/download/v0.3.0/janusgraph-0.3.0-hadoop2.zip
+ARG server_zip=https://github.com/JanusGraph/janusgraph/releases/download/v0.3.1/janusgraph-0.3.1-hadoop2.zip
 
 RUN apt-get update -y && apt-get install -y zip && \
     wget -nv -O /var/`basename ${server_zip}` ${server_zip} && \
